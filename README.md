@@ -68,7 +68,7 @@ Since PCA gives more emphasis to those variables having higher variances than to
 Even though PCA is prone to outliers, the outliers are left as they are under the assumption that the political parties may lay on the extreme left or right wing given an ideology rather than the outliers may address the data quality issues so that the possible information loss is prevented.In addition, since PCA does not make use of any label by its design, train-test split is not applied.
 
 
-### Visualization of CHES data in 2D by political parties (Question 2)
+### Visualization of CHES data in 2D by political parties
 
 As stated PCA technique is leveraged for reducing the high dimensional CHES data to 2D in a way that first dimension represents the economic left/right position while the second dimension represents the social left/right position plus EU integration stance. 
 
@@ -119,14 +119,14 @@ The insight generated from this study is in line with the results from the study
 Additional analysis on the results would be examining the distribution of the political parties by country. Bakker, Jolly and Pork (2012) suggest that the relationship between economic and social left/right varies across countries. For example, Spain has positive and statistically significant relationship while Hungary has negative and significant relationship. As for Slovakia, there is no discernable pattern between those two dimensions.
 
 
-### The distribution of the 2D points (Question 3)
+### The distribution of the 2D points
 
 To illustrate the distribution of the 2D points, kernel density estimation is leveraged. It is a non-parametric method used primarily to estimate the probability density function of a collection of discrete data points. If (x1,x2,⋯,xn), (y1,y2,⋯,yn) represent an independent and identically distributed sample drawn from an unknown distribution, then the kernel density estimator estimates the shape of the density function from the unknown distributions.
 
 The figure saved in images folder shows that the majority of the parties are roughly centrist in terms of both stances.
 
 
-### The feature values  from the high-dimensional space (Question 4)
+### The feature values  from the high-dimensional space
 
 
 PCA follows the steps:
@@ -145,7 +145,7 @@ principal_component2= y1*w1 + ... yn*wm
 `
 
 
-### The bounds mapped into the 2D space (Question 5)
+### The bounds mapped into the 2D space
 
 Since the data is standardized, the boundaries are shrinked accordingly. However, there is still some values on axes that exceed the standardized boundaries because sum of the weights is not equal to 1. To prevent this, the weights can be normalised, ranging from 0 to 1.
 
